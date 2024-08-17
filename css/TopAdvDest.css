@@ -1,0 +1,135 @@
+/* Destination Section */
+/* .destination {
+    margin-top: 80px; 
+    padding: 20px;
+} */ 
+.destination article .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.destination article {
+    background-color: rgb(137, 207, 240);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: -125px;
+    margin-left:55px;
+}
+
+.destination article .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.destination article img {
+    max-width: 600px;
+    max-height: 600px;
+    border: 5px solid white; 
+    padding: 00px; 
+    width: 100%;
+    height: 100%; 
+    box-sizing: border-box; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.destination article:nth-of-type(odd) {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+.destination article:nth-of-type(even) {
+    flex-direction: row-reverse; /* Text on the left, image on the right */
+}
+
+.destination article .text {
+    flex: 1;
+    font-family: "Arial", sans-serif;
+    object-fit: cover;
+    margin-left: 100px;
+    border: 5px solid black;
+    background-color: #f8ebd3;
+    border-radius: 10px;
+    padding:40px;
+}
+
+.destination article h2 {
+    font-size: 1.5em;
+    margin: 0 ;
+}
+
+.destination article p {
+    margin: 0;
+}
+
+.destination article a {
+    color: #000;
+    text-decoration: none;
+}
+
+.destination article a:hover {
+    text-decoration: none;
+}
+.destination article .text:hover {
+    color:#696969;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+
+}
+
+article:nth-child(even) .content .text {
+    margin-right:150px;
+    white-space: nowrap;
+    color: #696969;
+    font-family: "Arial", sans-serif;
+    flex: 1;
+    object-fit: cover;
+    font-size: 15px;
+  
+}
+article:nth-child(even) .content {
+    flex-direction: row-reverse;
+}
+
+article:nth-child(even) .content .image{
+    text-align: end;
+}
+
+header h1{
+    margin-top: 450px;
+    color: #FFF;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #4B2E2E;
+    padding: 10%;
+    white-space: nowrap;
+    font-size: 30px;
+   
+}
+
+ header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: 47px;
+}
+body{
+    background-color: #D1BFA8;
+
+}

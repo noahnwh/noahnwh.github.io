@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(182, 219, 246);
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+#myCarousel{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.carousel-indicators{
+    bottom: 10px;
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    height: auto;
+    max-height: 580px;
+    margin: auto;
+    object-fit: cover;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .carousel-caption p{
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .carousel-caption a{
+    text-shadow: none;
+    text-shadow: 1px 5px 8px rgba(0,0,0,0.6);
+  }
+ 
+ 
+ h3{
+    font-weight: bold;
+    padding-top: 140px;
+    margin-top: -140px;
+}
+
+h4{
+    font-size: 25px;
+    color:rgb(54, 108, 196);
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+}
+
+.box p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.box .visit_button{
+    font-size: 14px;
+    color:white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: black;
+    padding: 2px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.box:hover .visit_button{
+    border-color:  rgb(54, 108, 196);
+    background-color:  rgb(54, 108, 196);
+}
+
+.btn-link{
+    background-color: rgb(255, 189, 67);
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 17px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-link:hover{
+    border: 2px solid white;
+    background-color: rgb(227, 148, 0);
+    color:white;
+    text-decoration: none;
+}
+
+
+/* .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.button-container a {
+    background-color: rgb(247, 201, 117);
+    color: black;
+    padding: 8px;
+    text-align: center;
+    flex: 0.1;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+.button-container a:hover {
+    background-color: rgb(249, 176, 40);
+} */
+

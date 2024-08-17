@@ -1,0 +1,120 @@
+.desc .img img {
+  
+    width: 90%; 
+    height: 90%; 
+    aspect-ratio: 4 / 3; 
+    object-fit: cover;
+    border-radius: 10px; 
+    flex: 1;
+    
+}
+
+.desc .thingsimg img {
+   
+    width: 50%; 
+    height: 40%;
+    aspect-ratio: 4 / 3; 
+    border-radius: 10px; 
+    flex: 1;
+    margin-left:350px;
+
+}
+
+.desc .traveldesc  {
+    
+    border: 2px solid #FFA500; 
+    border-radius: 15px;       
+    padding: 10px;             
+    margin: 10px; 
+    background-color: #FFA500;
+
+    
+}
+
+.desc .traveldesc p {
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    color: #000000;
+    
+}
+
+.desc .traveldesc h2 {
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    color: #000000;
+    font-size: 40px;
+    
+}
+.desc .text p {
+    font-family: "Arial", sans-serif;
+    line-height: 2.0;
+    width :900px;
+    color: #000000;
+    margin-left: 300px;
+    font-size: 20px
+}
+
+.desc .text h2 {
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    color: #000000;
+    font-size: 40px;
+    margin-left: 200px;
+}
+
+.desc .text header {
+    color: #000000;
+    font-family: "Arial", sans-serif;
+   
+}
+
+header h1{
+    margin-top: 320px;
+    color: #FFF;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #4B2E2E;
+    padding: 10%;
+    white-space: nowrap;
+    font-size: 40px;
+}
+
+header h2{
+    
+    margin-top: -300px;
+    padding-left: 50px;
+    color: #d6d6b3;
+    font-family: "Arial", sans-serif;
+    text-align:center;
+    background-color: #4B2E2E;
+    padding: 10%;
+    white-space: nowrap;
+    font-size: 25px;
+}
+header p {
+    margin-top: -225px;
+    color:#d6d6b3;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+    background-color: #4B2E2E;
+    padding: 5%;
+    font-size: 20px;
+}
+
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: 47px;
+}
+
+body{
+    background-color: #D1BFA8;
+
+}

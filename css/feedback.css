@@ -1,0 +1,34 @@
+ body{
+    background-color: rgb(41, 39, 39);
+    background-image: url(../feedback_img/feedback_background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+ }
+
+ .container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: 2px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom,rgb(244, 174, 46), rgb(241, 177, 59), rgb(241, 183, 76));
+ }
+
+ h2{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+ }
+
+ .btn.btn-default{
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+ }
+
+ .btn.btn-default:hover {
+    background-color: #0074D9;
+    border-color: #0074D9;
+    color: white;
+}
