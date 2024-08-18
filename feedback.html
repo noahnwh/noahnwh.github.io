@@ -66,8 +66,9 @@
               <div class="form-group">
                      
                 <div class="col-sm-offset-2 col-sm-10">
-                    <div class="g-recaptcha" data-sitekey="6LcbdikqAAAAABQeChjzlG20JxqMMdfvVU1miLN6"></div>   
-                  <button type="submit" class="btn btn-default">Submit</button>
+                    <div class="g-recaptcha" data-sitekey="6LcbdikqAAAAABQeChjzlG20JxqMMdfvVU1miLN6" data-callback="recaptchaCallback"></div>
+                    
+                  <button type="submit" class="btn btn-default" id="captchaBtn" disabled>Submit</button>
                 </div>
               </div>
             </form>
@@ -110,5 +111,10 @@
                 </ul>
             </div>
         </footer>
+        <script>
+            function recaptchaCallback() {
+              document.getElementById('captchaBtn').disabled = false;
+            }
+        </script>
     </body>
 </html>
