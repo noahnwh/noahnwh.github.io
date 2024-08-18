@@ -1,0 +1,326 @@
+ul{
+    font-size: 12px;
+    font-family:'Times New Roman';
+    }
+
+    @keyframes gradientBackground {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    body{
+        padding-top: 100px;
+        background-color: #F0F8FF;
+        background: linear-gradient(270deg, #77c6f4, #6BCAE2, #8dc9db);
+        background-size: 600% 600%;
+        animation: gradientBackground 15s ease infinite;
+    }
+
+
+
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+      
+    .carousel-inner img {
+        width: 100%; /* Set width to 100% */
+        object-fit: cover;
+    }
+
+    .carousel-caption{
+        padding-left: 10px;
+    }
+    
+    .item{
+        width: 100%; 
+        height: 70%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+    
+    .carousel-caption h3{
+        font-size:xx-large;
+        font-family:'Montserrat', sans-serif;
+        font-size: 3vw;
+        font-weight: 900;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #100f0f;
+        margin-right: 100%;
+    }
+    .carousel-caption h1{
+        font-size:larger;
+        font-size: 3vw; /* Adjust font size dynamically relative to the viewport width */
+        font-family:'Lato' sans-serif;
+        font-weight: 400;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #100f0f;
+    }
+    .carousel-caption p{
+        font-size:large;
+        font-family:'Lato' sans-serif;
+        font-weight: 90;
+        background:#201645;
+    }
+    .carousel-caption h2{
+         font-family:'Lato' sans-serif;
+        font-weight: 400;
+        background: linear-gradient(to right, black, #256427);
+
+    }
+    .carousel-caption h4{
+        font-size:larger;
+        font-family:'Lato' sans-serif;
+        font-weight: 400;
+        -webkit-text-stroke-width: 0.2px;
+        -webkit-text-stroke-color: #100f0f;
+        
+    }
+
+
+
+/* Custom Carousel Styling */
+.custom-carousel {
+    border: 2px solid #000; /* Add a border to the carousel box */
+    border-radius: 10px; /* Rounded corners for the carousel */
+    width: 100%; /* Adjust width to fit container */
+    height: 500px; /* Set a fixed height for better control */
+    overflow: hidden;
+    margin-left: 32%;
+    position: relative;
+}
+
+.custom-carousel .carousel-inner .item img {
+    object-fit: cover; /* Ensure images cover the entire carousel box */
+    height: 100%; /* Images fill the height */
+    width: 100%; /* Images fill the width */
+    
+}
+
+.col-md-6 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 10px; /* Center the column */
+    margin-right: 10%; /* Center the column */
+}
+
+.custom-carousel .carousel-control.left:hover,
+.custom-carousel .carousel-control.right:hover {
+    color: #555;
+}
+
+
+/* Right-side text styling */
+.description {
+    background: #FFAA4C;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding-left: 60%;
+    padding-right: 50px;
+    -webkit-text-stroke-width: 0.1px ;
+    -webkit-text-stroke-color: black;
+    padding-top: 30px;
+
+}
+
+    
+
+
+
+
+
+
+    .video-frame {
+        height: auto;  /* Automatic height based on aspect ratio */
+        width: auto;
+        padding-bottom: 30px;
+        text-align: center;
+
+    }
+    
+    .video {
+        width: 900px;
+        height: 500px;
+    }
+    
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+@keyframes colorChange {
+    0% {
+        color: black; 
+    }
+    25% {
+        color: yellow; 
+    }
+    50% {
+        color: blue; 
+    }
+    75% {
+        color: red; 
+    }
+    100% {
+        color:white; 
+    }
+}
+
+
+.content {
+    position:static;
+    text-align: center;
+    color: white;
+}
+.content1 {
+    position:static;
+    text-align: center;
+    color: white;
+}
+
+.content1 h1 {
+    font-size: 3vw; /* Adjust font size dynamically relative to the viewport width */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: #100f0f;
+    -webkit-text-stroke: 1px black;
+    animation: fadeIn 5s ease-in forwards,colorChange 10s infinite alternate;
+    top: 50%;
+    left: 50%;
+
+}
+
+.content1 h1:hover {
+    -webkit-text-fill-color: rgb(224, 74, 74);
+    color: rgb(99, 99, 199); /* Fallback for browsers that do not support -webkit-text-fill-color */
+}
+
+
+.intro{
+    text-align: center;
+    padding-top: 100px;
+    background-color: #FFAA4C;
+}
+.intro title{
+    font-size: 200px;
+
+}
+.intro description{
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    display:inline-block;
+    text-align:right;
+    margin: left;
+    
+}
+.Malaysia{
+    text-align: center;
+    font-size: large;
+}
+.title{
+    font-weight: bold;
+}
+.description{
+    padding: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    word-spacing: 2.0mm;
+}
+
+
+
+.Mission {
+    margin-left: 15.5%;
+    margin-right: 15.5%;
+    background: #FFAA4C;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Center vertically within the .Mission container */
+    justify-content: space-between; /* Ensure space between the image and the text */
+}
+
+.jojo {
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.jojo img {
+    margin-left: 80px;
+    margin-top: 40px;
+    height: 300px;
+    width: 550%; /* Ensuring the image size matches the first one */
+     /* Prevents the image from exceeding its container's width */
+}
+
+.goal p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 2.0;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    margin: 0;
+    margin-left: 50%; /* Adds space between the image and the text */
+    margin-top: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
