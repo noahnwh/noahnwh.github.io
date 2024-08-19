@@ -17,11 +17,17 @@
         
     </head>
     <body>
-        <nav class="topBar">
+        <div class="topBar">
             <div class="top_icon">
-                <a href="index.html"><img src="image/JOJO.jpeg"></a>
+                <a href="index.html"><img src="image/JOJO.jpeg" alt="Logo"></a>
             </div>
-            <div class="topBar_nav">
+            <!-- Hamburger Icon -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="topBar_nav">
                 <a href="index.html">Home</a>
                 <a href="AboutMalaysia.html">About Malaysia</a>
                 <a href="LocalCuisine.html">Local Cuisine</a>
@@ -30,14 +36,13 @@
                 <a href="TopTravelDest.html">Top Travel Destinations</a>
                 <a href="TopAdvDest.html">Top Adventure Destinations</a>
                 <a href="feedback.html">Feedback</a>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
 
         <div class="container">
             <h2>We Value Your Feedback</h2>
             <form class="form-horizontal" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="2bda163d-05b4-4f89-89c3-38c340962546">
+                <input type="hidden" name="apikey" value="2bda163d-05b4-4f89-89c3-38c340962546">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="name">Name:</label>
                     <div class="col-sm-10">
@@ -66,7 +71,6 @@
               <div class="form-group">
                      
                 <div class="col-sm-offset-2 col-sm-10">
-                    <!-- <div class="g-recaptcha" data-sitekey="6LcbdikqAAAAABQeChjzlG20JxqMMdfvVU1miLN6" data-size="compact"></div> -->
                     
                   <button type="submit" class="btn btn-default" id="captchaBtn">Submit</button>
                 </div>
@@ -74,23 +78,7 @@
             </form>
           </div>
 
-          <!-- <script type="text/javascript" language="javascript">
-            function validateform(){
-               var captcha_response = grecaptcha.getResponse();
-               if(captcha_response.length == 0)
-               {
-                   // Captcha is not Passed
-                   document.getElementById('captcha').innerHTML="You must check reCaptcha.<br>";
-                   return false;
-               }
-               else
-               {
-                   // Captcha is Passed
-                   //document.getElementById('captcha').innerHTML="reCAPTCHA completed";
-                   return true;
-               }
-            }
-            </script> -->
+          
 
           <footer>
             <div class="bottom">
