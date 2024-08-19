@@ -1,5 +1,5 @@
     function recaptchaCallback() {
-    document.getElementById('captchaBtn').disabled = false;
+        document.getElementById('captchaBtn').disabled = false;
     }
 
     function saveFormData() {
