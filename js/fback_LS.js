@@ -1,8 +1,5 @@
     // Recaptcha function
-    function recaptchaCallback() {
-        document.getElementById('captchaBtn').disabled = false;
-    }
-    
+
     // Function to save form data to localStorage
     function saveFormData() {
         localStorage.setItem('name', document.getElementById('name').value);
