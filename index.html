@@ -39,34 +39,7 @@
         </div>
        
        
-    <div class="body">
-        <div id="chatbox"></div>
-        
-        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
-        <script>
-          fetch("https://utarhospitalchatbot.onrender.com/chatbot")
-            .then(res => res.text())
-            .then(data => {
-              const chatbox = document.getElementById("chatbox");
-              chatbox.innerHTML = data;
-        
-              // Inject correct script
-              const script = document.createElement("script");
-              script.src = "https://utarhospitalchatbot.onrender.com/static/js/chatbot.js";
-              document.body.appendChild(script);
-        
-              // Fix z-index
-              const styleFix = document.createElement("style");
-              styleFix.innerHTML = `
-                #popup-inbox-container, #open-chatbox {
-                  z-index: 9999 !important;
-                }
-              `;
-              document.head.appendChild(styleFix);
-            })
-            .catch(console.error);
-        </script>
-
+    <div class="body">    
         <div id="myCarousel" class="carousel slide">
             <!-- Indicators -->
 
